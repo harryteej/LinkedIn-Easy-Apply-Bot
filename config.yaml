@@ -1,25 +1,25 @@
-email: email@domain.com
-password: yourpassword
+email: aoanoff@gmail.com
+password: Himalaya86!
 
 disableAntiLock: False
 
-remote: False
+remote: True
 
 experienceLevel:
  internship: False
  entry: True
- associate: False
- mid-senior level: False
+ associate: True
+ mid-senior level: True
  director: False
  executive: False
  
 jobTypes:
  full-time: True
- contract: False
- part-time: False
- temporary: False
+ contract: True
+ part-time: True
+ temporary: True
  internship: False
- other: False
+ other: True
  volunteer: False
  
 date:
@@ -29,18 +29,22 @@ date:
  24 hours: False
  
 positions:
- #- First position
- #- A second position
- #- A third position
+ - Compliance Specialist
+ - Compliance Officer
+ - KYC
+ - Know Your Customer
  #- ...
+ 
 locations:
- #- First location
- #- A second location
- #- A third location
+ - London
+ - Reigate
+ - Redhill
+ - Crawley
+  #- A third location
  #- ...
-distance: 25
+distance: 30
 
-outputFileDirectory: C:\Users\myDirectory\
+outputFileDirectory: C:\Users\teeja\OneDrive\Desktop\Abby CV\Applications made
 
 companyBlacklist:
  #- company
@@ -51,7 +55,7 @@ titleBlacklist:
  #- word2
 
 uploads:
- resume: C:\Users\myDirectory\Resume.pdf
+ resume: C:\Users\teeja\OneDrive\Desktop\Abby CV\Abby Anoff C_CV.pdf
  # Cover letter is optional
  #coverLetter: C:\Users\myDirectory\CoverLettter.pdf
 
@@ -76,7 +80,7 @@ checkboxes:
   - High School Diploma
   - Bachelor's Degree
   # - Associate's Degree
-  # - Master's Degree
+  - Master's Degree
   # - Master of Business Administration
   # - Doctor of Philosophy
   # - Doctor of Medicine
@@ -85,7 +89,7 @@ checkboxes:
  backgroundCheck: True
 
 # ------------ Additional parameters: univeristyGpa ---------------
-universityGpa: 4.0
+# universityGpa: 4.0
 
 # ------------ Additional parameters: languages ---------------
 languages:
@@ -110,25 +114,25 @@ industry:
  Finance: 0
  General Business: 0
  Health Care Provider: 0
- Human Resources: 0
+ Human Resources: 2
  Information Technology: 0
- Legal: 0
- Management: 0
+ Legal: 6
+ Management: 2
  Manufacturing: 0
  Marketing: 0
  Public Relations: 0
  Purchasing: 0
  Product Management: 0
- Project Management: 0
+ Project Management: 2
  Production: 0
  Quality Assurance: 0
- Research: 0
+ Research: 6
  Sales: 0
  Science: 0
  Strategy/Planning: 0
  Supply Chain: 0
  Training: 0
- Writing/Editing: 0
+ Writing/Editing: 9
  # end normal ones
  # put your custom ones here
  #C++: 0
@@ -147,16 +151,16 @@ technology:
  default: 0
 # ------------ Additional parameters: personal info ---------------
 personalInfo:
- First Name: FirstName
- Last Name: LastName
- Phone Country Code: Canada (+1) # See linkedin for your country code, must be exact
- Mobile Phone Number: 1234567890
- Street address: 123 Fake Street
- City: Red Deer, Alberta # Include the state/province as well!
- State: YourState
- Zip: YourZip/Postal
- Linkedin: https://www.linkedin.com/in/my-linkedin-profile
- Website: https://www.my-website.com # github/website is interchangable here
+ First Name: Abby
+ Last Name: Anuta
+ Phone Country Code: United Kingdom (+44) # See linkedin for your country code, must be exact
+ Mobile Phone Number: 07511313213
+ #Street address: 123 Fake Street
+ #City: Red Deer, Alberta # Include the state/province as well!
+ #State: YourState
+ #Zip: YourZip/Postal
+ Linkedin: https://www.linkedin.com/in/abby-a-6538031a2/
+ #Website: https://www.my-website.com # github/website is interchangable here
 
 # ------------ Additional parameters: USA employment crap ---------------
 eeo:
