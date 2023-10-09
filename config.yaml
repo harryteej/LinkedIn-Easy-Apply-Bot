@@ -89,7 +89,7 @@ checkboxes:
  backgroundCheck: True
 
 # ------------ Additional parameters: univeristyGpa ---------------
-# universityGpa: 4.0
+ universityGpa: 4.0
 
 # ------------ Additional parameters: languages ---------------
 languages:
