@@ -18,7 +18,7 @@ def init_browser():
         #print (ChromeDriverManager())
         
 
-    driver = webdriver.Chrome(ChromeDriverManager().install(), chrome_options=browser_options)
+    driver = webdriver.Chrome(servoce ChromeDriverManager().install(), chromeoptions=browser_options)
     #driver = webdriver.Chrome(ChromeDriverManager().install(), options= browser_options)
     
     driver.set_window_position(0, 0)
