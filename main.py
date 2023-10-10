@@ -13,8 +13,9 @@ def init_browser():
     for option in options:
         browser_options.add_argument(option)
 
-    driver = webdriver.Chrome(ChromeDriverManager().install(), chrome_options=browser_options)
-
+    #driver = webdriver.Chrome(ChromeDriverManager().install(), chrome_options=browser_options)
+    #driver = webdriver.Chrome(ChromeDriverManager().install(), options=options)
+    
     driver.set_window_position(0, 0)
     driver.maximize_window()
 
@@ -29,9 +30,9 @@ def validate_yaml():
             raise exc
 
     mandatory_params = ['email', 'password', 'disableAntiLock', 'remote', 'experienceLevel', 'jobTypes', 'date',
-                        'positions', 'locations', 'distance', 'outputFileDirectory', 'checkboxes', 'universityGpa',
-                        'languages', 'industry', 'technology', 'personalInfo', 'eeo', 'uploads']
-
+                        'positions', 'locations', 'distance', 'outputFileDirectory', 'checkboxes','languages', 'industry', 'technology', 			'personalInfo', 'eeo', 'uploads']
+    
+    
     for mandatory_param in mandatory_params:
         if mandatory_param not in parameters:
             raise Exception(mandatory_param + ' is not inside the yml file!')
@@ -67,7 +68,7 @@ def validate_yaml():
             at_least_one_date = True
     assert at_least_one_date
 
-    approved_distances = {0, 5, 10, 25, 50, 100}
+    approved_distances = {0, 5, 10, 25, 30, 50, 100}
     assert parameters['distance'] in approved_distances
 
     assert len(parameters['positions']) > 0
@@ -86,7 +87,7 @@ def validate_yaml():
     assert isinstance(checkboxes['backgroundCheck'], bool)
     assert 'degreeCompleted' in checkboxes
 
-    assert isinstance(parameters['universityGpa'], (int, float))
+    ##assert isinstance(parameters['universityGpa'], (int, float))
 
     languages = parameters.get('languages', [])
     language_types = {'none', 'conversational', 'professional', 'native or bilingual'}
